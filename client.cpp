@@ -2,6 +2,7 @@
 #include "multimediaelement.h"
 #include "client.h"
 #include "visitor.h"
+#include "showvisitor.h"
 
 using namespace std;
 
@@ -13,7 +14,8 @@ Client::Client()
 
 void Client::createShow()
 {
-	this->visitor = new ShowVisitor();
+	ShowVisitor* showVisitor = new ShowVisitor();
+	this->visitor = showVisitor;
 }
 void Client::displayMultimedia(const MultimediaElement m)
 {
