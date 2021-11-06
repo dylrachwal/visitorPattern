@@ -15,7 +15,7 @@ jpg.o : jpg.cpp jpg.h visitor.h multimediaelement.h
 multimediaelement.o : multimediaelement.cpp visitor.h multimediaelement.h
 	g++ -c multimediaelement.cpp
 
-client.o : client.cpp client.h visitor.h multimediaelement.showvisitor
+client.o : client.cpp client.h visitor.h multimediaelement.h
 	g++ -c client.cpp
 
 showvisitor.o : showvisitor.cpp showvisitor.h jpg.h mp3.h mp4.h

@@ -13,8 +13,8 @@ protected :
     string name;
 public:
     MultimediaElement();
-    virtual void accept(Visitor *v) const = 0;
-    string getName();
+    virtual void accept(Visitor *v) const;
+    string getName() const;
 };
 
 

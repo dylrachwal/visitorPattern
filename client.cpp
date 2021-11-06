@@ -1,13 +1,10 @@
 #include <iostream>
 #include "multimediaelement.h"
+#include "client.h"
 #include "visitor.h"
 
 using namespace std;
 
-string MultimediaElement::getName() const
-{
-	return this->name;
-}
 
 Client::Client()
 {
@@ -20,9 +17,9 @@ void Client::createShow()
 }
 void Client::displayMultimedia(const MultimediaElement m)
 {
-	m.accept(this->visitor)
+	m.accept(this->visitor);
 }
 void Client::displaySpectre(const MultimediaElement m)
 {
-	m.accept(this->visitor)
+	m.accept(this->visitor);
 }

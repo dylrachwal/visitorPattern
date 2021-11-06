@@ -8,7 +8,7 @@
 class Client
 {
 private :
-	Visitor visitor;	
+	Visitor *visitor;	
 public:
     Client();
     void createShow();

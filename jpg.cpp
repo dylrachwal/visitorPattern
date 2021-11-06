@@ -1,4 +1,5 @@
 #include <iostream>
+#include "visitor.h"
 #include "jpg.h"
 
 using namespace std;
