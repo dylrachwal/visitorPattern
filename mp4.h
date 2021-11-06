@@ -6,6 +6,7 @@
 #include <iostream>
 using namespace std;
 
+class Visitor;
 
 class MP4 : public MultimediaElement {
 private :

@@ -6,6 +6,8 @@
 #include <iostream>
 using namespace std;
 
+class Visitor;
+
 class MP3 : public MultimediaElement {
 private :
     double duration;

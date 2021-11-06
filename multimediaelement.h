@@ -5,6 +5,8 @@
 #include <iostream>
 using namespace std;
 
+class Visitor;
+
 class MultimediaElement 
 {
 protected :
