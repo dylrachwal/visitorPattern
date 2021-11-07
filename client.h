@@ -1,7 +1,7 @@
 #ifndef _CLIENT
 #define _CLIENT
 
-#include "visitor.h"
+#include "showvisitor.h"
 #include "multimediaelement.h"
 
 
@@ -12,7 +12,6 @@ private :
 public:
     Client();
     void createShow();
-    void displayMultimedia(const MultimediaElement m);
-    void displaySpectre(const MultimediaElement m);
+    void displayMultimedia(const MultimediaElement *m, ShowVisitor *visitor);
 };
 #endif
