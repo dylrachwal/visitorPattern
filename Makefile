@@ -21,4 +21,7 @@ client.o : client.cpp client.h visitor.h multimediaelement.h
 showvisitor.o : showvisitor.cpp showvisitor.h jpg.h mp3.h mp4.h
 	g++ -c showvisitor.cpp
 
-spectrographvisitor.o : spectrographvisitor.cpp spectrographvisitor.g jpg.h mp3.h mp4.h
+spectrographvisitor.o : spectrographvisitor.cpp spectrographvisitor.h jpg.h mp3.h mp4.h
+	g++ -c spectrographvisitor.cpp
+clean :
+	rm *.o main

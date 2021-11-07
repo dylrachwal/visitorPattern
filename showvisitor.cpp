@@ -1,11 +1,18 @@
 #include <iostream>
 #include "showvisitor.h"
+#include "mp3.h"
 #include "mp4.h"
 #include "jpg.h"
-#include "mp3.h"
+
 using namespace std;
 
-void ShowVisitor::visitMP3(const MP3 *mp3) override
+
+ShowVisitor::ShowVisitor()
+{
+    this->nbElementDisplayed =0;
+}
+
+void ShowVisitor::visitMP3(const MP3 *mp3) 
 {
     cout<<"showing MP3" << endl;
     cout << "the file is named " << mp3->getName() <<endl;
@@ -13,7 +20,7 @@ void ShowVisitor::visitMP3(const MP3 *mp3) override
     cout << "closing MP3" << endl;
 }
 
-void ShowVisitor::visitMP4(const MP4 *mp4) override
+void ShowVisitor::visitMP4(const MP4 *mp4) 
 {
     cout<<"showing MP4" << endl;
     cout << "the file is named " << mp4->getName() <<endl;
@@ -21,7 +28,7 @@ void ShowVisitor::visitMP4(const MP4 *mp4) override
     cout << "closing MP4" << endl;
 }
 
-void ShowVisitor::visitJPG(const JPG *jpg) override
+void ShowVisitor::visitJPG(const JPG *jpg) 
 {
     cout<<"showing JPG" << endl;
     cout << "the file is named " << jpg->getName() <<endl;

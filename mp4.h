@@ -2,7 +2,6 @@
 #define _MP4
 
 #include "multimediaelement.h"
-#include "visitor.h"
 #include <iostream>
 using namespace std;
 
@@ -14,7 +13,6 @@ private :
     double duration;
 public :
 	MP4(string name, int size, double duration);
-    ~MP4();
     void accept(Visitor *v) const;
     int getSize() const;
     double getDuration() const;
