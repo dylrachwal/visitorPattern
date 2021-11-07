@@ -1,8 +1,10 @@
 #ifndef _CLIENT
 #define _CLIENT
 
+
 #include "showvisitor.h"
 #include "multimediaelement.h"
+#include <array>
 
 
 class Client
@@ -12,6 +14,6 @@ private :
 public:
     Client();
     void createShow();
-    void displayMultimedia(const MultimediaElement &m, ShowVisitor *visitor);
+    void displayMultimedia(std::array<const MultimediaElement *, 2> elements, ShowVisitor *visitor);
 };
 #endif

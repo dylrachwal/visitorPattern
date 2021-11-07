@@ -13,11 +13,9 @@ using namespace std;
 int main(int argc, char* argv[])
 {
     Client C;
-    JPG jpg("jpg", 6, 7);
-    MP3 mp3("mp3", 5.5);
-    MP4 mp4("mp4", 42, 4.2);
+    std::array<const MultimediaElement *, 2> elements = {new JPG("jpg", 6, 7), new MP3("mp3", 5.5)};
     ShowVisitor *showVisitor;
-    C.displayMultimedia(mp3, showVisitor);
+    C.displayMultimedia(elements, showVisitor);
 
     return 0;
 }

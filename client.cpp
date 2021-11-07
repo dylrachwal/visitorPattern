@@ -2,6 +2,7 @@
 #include "client.h"
 #include "multimediaelement.h"
 #include "showvisitor.h"
+#include <array>
 
 
 
@@ -11,7 +12,9 @@ Client::Client()
 }
 
 
-void Client::displayMultimedia(const MultimediaElement &m, ShowVisitor *visitor)
-{
-	m.accept(visitor);
+void Client::displayMultimedia(std::array<const MultimediaElement *, 2> elements, ShowVisitor *visitor)
+{	
+	for (const MultimediaElement *element : elements) {
+    	element->accept(visitor);
+	};
 }
