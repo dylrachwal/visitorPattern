@@ -1,9 +1,8 @@
 #include <iostream>
 #include "multimediaelement.h"
 
-using namespace std;
 
-string MultimediaElement::getName() const
+std::string MultimediaElement::getName() const
 {
-	return this->name;
+	return name;
 }

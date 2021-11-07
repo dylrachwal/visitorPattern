@@ -3,9 +3,7 @@
 #include "visitor.h"
 
 
-using namespace std;
-
-JPG::JPG(string name, int width, int length)
+JPG::JPG(std::string name, int width, int length)
 {
     this->name = name;
     this->width = width;
@@ -13,21 +11,21 @@ JPG::JPG(string name, int width, int length)
 }
 void JPG::accept(Visitor *v) const
 {
-    cout<<"JPG Element accepted Visitor" << endl;
+    std::cout<<"JPG Element accepted Visitor" << std::endl;
     v->visitJPG(this);
 }
 int JPG::getWidth() const
 {
-    return this->width;
+    return width;
 }
 int JPG::getLength() const
 {
-    return this->length;
+    return length;
 }
 int JPG::getCoordinates() const
 {
     int coordinates[2];
-    coordinates[0]=this->width;
-    coordinates[1]=this->length;
+    coordinates[0]=width;
+    coordinates[1]=length;
     return *coordinates;
 }

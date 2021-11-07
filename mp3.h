@@ -3,7 +3,6 @@
 
 #include "multimediaelement.h"
 #include <iostream>
-using namespace std;
 
 class Visitor;
 
@@ -11,7 +10,7 @@ class MP3 : public MultimediaElement {
 private :
     double duration;
 public :
-	MP3(string name, double duration);
+	MP3(std::string name, double duration);
     void accept(Visitor *v) const;
     double getDuration() const;
 };

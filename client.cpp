@@ -3,16 +3,15 @@
 #include "multimediaelement.h"
 #include "showvisitor.h"
 
-using namespace std;
 
 
 Client::Client()
 {
-	cout << "client created " << endl;
+	std::cout << "client created " << std::endl;
 }
 
 
-void Client::displayMultimedia(const MultimediaElement *m, ShowVisitor *visitor)
+void Client::displayMultimedia(const MultimediaElement &m, ShowVisitor *visitor)
 {
-	m->accept(visitor);
+	m.accept(visitor);
 }

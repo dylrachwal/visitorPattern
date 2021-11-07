@@ -12,6 +12,6 @@ private :
 public:
     Client();
     void createShow();
-    void displayMultimedia(const MultimediaElement *m, ShowVisitor *visitor);
+    void displayMultimedia(const MultimediaElement &m, ShowVisitor *visitor);
 };
 #endif

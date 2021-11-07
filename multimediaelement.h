@@ -2,17 +2,17 @@
 #define _MULTIMEDIAELEMENT
 
 #include <iostream>
-using namespace std;
+
 
 class Visitor;
 
 class MultimediaElement 
 {
 protected :
-    string name;
+    std::string name;
 public:
-    virtual void accept(Visitor *v) const;
-    string getName() const;
+    virtual void accept(Visitor *v) const {};
+    std::string getName() const;
 };
 
 

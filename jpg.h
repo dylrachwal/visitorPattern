@@ -3,7 +3,6 @@
 
 #include "multimediaelement.h"
 #include <iostream>
-using namespace std;
 
 class Visitor;
 
@@ -12,7 +11,7 @@ private :
     int width;
     int length;
 public :
-	JPG(string name, int width, int length);
+	JPG(std::string name, int width, int length);
     void accept(Visitor *v) const;
     int getLength() const;
     int getWidth() const;
