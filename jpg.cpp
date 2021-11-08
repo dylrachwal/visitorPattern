@@ -13,7 +13,6 @@ void JPG::accept(Visitor *v) const
 {
     std::cout<<"JPG Element accepted Visitor" <<std::endl;
     v->visitJPG(this);
-    std::cout <<"i'm here" << std::endl;
 }
 int JPG::getWidth() const
 {

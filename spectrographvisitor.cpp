@@ -1,23 +1,22 @@
 #include <iostream>
-#include "visitor.h"
 #include "spectrographvisitor.h"
+#include "mp3.h"
 #include "mp4.h"
 #include "jpg.h"
-#include "mp3.h"
+
 
 
 void SpectrographVisitor::visitMP3(const MP3 *mp3) 
 {
-    std::cout<<"visiting MP3" << std::endl;
+    std::cout << "showing specter of " << mp3->getName() << std::endl;
 }
 
-void SpectrographVisitor::visitMP4(const MP4 *mp4) 
+void SpectrographVisitor::visitMP4(const MP4 *mp4)
 {
-    std::cout<<"visiting MP4" << std::endl;
+    std::cout << "showing specter of " << mp4->getName() << std::endl;
 }
 
-
-void SpectrographVisitor::visitJPG(const JPG *jpg) 
+void SpectrographVisitor::visitJPG(const JPG *jpg)
 {
-    std::cout<<"visiting JPG" << std::endl;
+    std::cout << "showing specter of " << jpg->getName() << std::endl;
 }

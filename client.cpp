@@ -1,7 +1,7 @@
 #include <iostream>
 #include "client.h"
 #include "multimediaelement.h"
-#include "showvisitor.h"
+#include "visitor.h"
 #include <vector>
 
 
@@ -12,7 +12,7 @@ Client::Client()
 }
 
 
-void Client::displayMultimedia(std::vector<const MultimediaElement *> elements, ShowVisitor *visitor)
+void Client::displayMultimedia(std::vector<const MultimediaElement *> elements, Visitor *visitor)
 {	
 	for (const MultimediaElement *element : elements) {
     	element->accept(visitor);

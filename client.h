@@ -2,7 +2,7 @@
 #define _CLIENT
 
 
-#include "showvisitor.h"
+#include "visitor.h"
 #include "multimediaelement.h"
 #include <vector>
 
@@ -14,6 +14,6 @@ private :
 public:
     Client();
     void createShow();
-    void displayMultimedia(std::vector<const MultimediaElement *> elements, ShowVisitor *visitor);
+    void displayMultimedia(std::vector<const MultimediaElement *> elements, Visitor *visitor);
 };
 #endif
