@@ -1,5 +1,5 @@
-main : main.o client.o jpg.o mp3.o mp4.o jpg.h mp3.h mp4.h
-	g++ -o main main.o client.o jpg.o mp3.o mp4.o 
+main : main.o client.o multimediaelement.o jpg.o mp3.o mp4.o showvisitor.o jpg.h mp3.h mp4.h
+	g++ -o main main.o client.o multimediaelement.o jpg.o mp3.o mp4.o showvisitor.o
 main.o : main.cpp client.h jpg.h mp4.h mp3.h
 	g++ -c main.cpp
 

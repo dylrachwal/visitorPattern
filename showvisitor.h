@@ -13,9 +13,10 @@ class ShowVisitor : public Visitor
 private :
     int nbElementDisplayed;
 public:
-    void visitMP3(MP3 *mp3) ;
-    void visitMP4(MP4 *mp4) ;
-    void visitJPG(JPG *jpg) ;
+    ShowVisitor();
+    void visitMP3(const MP3 *mp3) override;
+    void visitMP4(const MP4 *mp4) override;
+    void visitJPG(const JPG *jpg) override;
 };
 
 #endif
