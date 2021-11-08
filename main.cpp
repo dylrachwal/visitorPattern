@@ -5,10 +5,9 @@
 #include "jpg.h"
 #include "mp3.h"
 #include "mp4.h"
-
-
 #include "showvisitor.h"
-using namespace std;
+
+
 
 int main(int argc, char* argv[])
 {
