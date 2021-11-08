@@ -12,8 +12,8 @@
 int main(int argc, char* argv[])
 {
     Client C;
-    std::array<const MultimediaElement *, 2> elements = {new JPG("jpg", 6, 7), new MP3("mp3", 5.5)};
-    ShowVisitor *showVisitor;
+    std::vector<const MultimediaElement *> elements = {new JPG("jpg", 6, 7), new MP3("mp3", 5.5)};
+    ShowVisitor *showVisitor = new ShowVisitor();
     C.displayMultimedia(elements, showVisitor);
 
     return 0;

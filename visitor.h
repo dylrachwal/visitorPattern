@@ -14,10 +14,10 @@ class MP4;
 class Visitor
 {
 public:
-    Visitor();
-    virtual void visitMP3(const MP3 *mp3);
-    virtual void visitMP4(const MP4 *mp4);
-    virtual void visitJPG(const JPG *jpg);
+    Visitor(){};
+    virtual void visitMP3(const MP3 *mp3){};
+    virtual void visitMP4(const MP4 *mp4){};
+    virtual void visitJPG(const JPG *jpg){};
 };
 
 #endif

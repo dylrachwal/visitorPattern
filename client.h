@@ -4,7 +4,7 @@
 
 #include "showvisitor.h"
 #include "multimediaelement.h"
-#include <array>
+#include <vector>
 
 
 class Client
@@ -14,6 +14,6 @@ private :
 public:
     Client();
     void createShow();
-    void displayMultimedia(std::array<const MultimediaElement *, 2> elements, ShowVisitor *visitor);
+    void displayMultimedia(std::vector<const MultimediaElement *> elements, ShowVisitor *visitor);
 };
 #endif

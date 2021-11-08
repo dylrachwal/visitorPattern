@@ -11,9 +11,8 @@ JPG::JPG(std::string name, int width, int length)
 }
 void JPG::accept(Visitor *v) const
 {
-    std::cout<<"JPG Element accepted Visitor"<<std::endl;
-
-    v->visitJPG(this);
+    std::cout<<"JPG Element accepted Visitor" <<std::endl;
+    * v->visitJPG(this);
 }
 int JPG::getWidth() const
 {
