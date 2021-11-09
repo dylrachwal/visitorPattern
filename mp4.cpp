@@ -17,7 +17,9 @@ MP4::MP4(std::string name, int size, double duration)
     this->duration = duration;
 }
 
-
+/*! Method accept
+ *  \param v pointer of a visitor object that will conserve the real child class (for instance showvisitor) 
+*/
 void MP4::accept(Visitor *v) const 
 {
     std::cout<<"MP4 Element accepted Visitor" << std::endl;

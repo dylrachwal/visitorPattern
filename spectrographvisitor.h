@@ -15,9 +15,9 @@
 class SpectrographVisitor : public Visitor
 {
 public:
-    void visitMP3(const MP3 *mp3) override; //!<
-    void visitMP4(const MP4 *mp4) override; //!<
-    void visitJPG(const JPG *jpg) override; //!<
+    void visitMP3(const MP3 *mp3) override; //!< Method to show the specter of a MP3
+    void visitMP4(const MP4 *mp4) override; //!< Method to show the specter of a MP4
+    void visitJPG(const JPG *jpg) override; //!< Method to show the specter of a JPG
 }; 
 
 #endif

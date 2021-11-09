@@ -14,7 +14,9 @@ ShowVisitor::ShowVisitor()
 {
     this->nbElementDisplayed =0;
 }
-
+/*! Method VisitMP3
+ *  \param mp3 pointer of an MP3 object
+*/
 void ShowVisitor::visitMP3(const MP3 *mp3) 
 {
     std::cout << "showing MP3" << std::endl;
@@ -23,7 +25,9 @@ void ShowVisitor::visitMP3(const MP3 *mp3)
     std::cout << "closing MP3" << std::endl;
     nbElementDisplayed++;
 }
-
+/*! Method VisitMP4
+ *  \param mp4 pointer of an MP4 object
+*/
 void ShowVisitor::visitMP4(const MP4 *mp4)
 {
     std::cout << "showing MP4" << std::endl;
@@ -32,7 +36,9 @@ void ShowVisitor::visitMP4(const MP4 *mp4)
     std::cout << "closing MP4" << std::endl;
     nbElementDisplayed++;
 }
-
+/*! Method VisitJPG
+ *  \param jpg pointer of an JPG object
+*/
 void ShowVisitor::visitJPG(const JPG *jpg)
 {
     std::cout << "showing JPG" << std::endl;

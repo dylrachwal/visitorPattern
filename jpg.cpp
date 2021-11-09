@@ -14,6 +14,9 @@ JPG::JPG(std::string name, int width, int length)
     this->width = width;
     this->length = length;
 }
+/*! Method accept
+ *  \param v pointer of a visitor object that will conserve the real child class (for instance showvisitor) 
+*/
 void JPG::accept(Visitor *v) const
 {
     std::cout<<"JPG Element accepted Visitor" <<std::endl;
