@@ -1,3 +1,8 @@
+/*! \file main.cpp
+ *  Implements the scenario how to use the design pattern
+ *  \author Dylan
+ *  \date 09/11/2021
+*/
 #include <iostream>
 #include "client.h"
 #include "visitor.h"

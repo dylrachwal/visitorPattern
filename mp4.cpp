@@ -1,3 +1,9 @@
+/*! \file mp4.cpp
+ *  Implement the methods of the class MP4
+ *  \author Dylan
+ *  \date 09/11/2021
+*/
+
 #include <iostream>
 #include "mp4.h"
 #include "visitor.h"

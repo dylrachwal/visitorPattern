@@ -1,3 +1,8 @@
+/*! \file showvisitor.cpp
+ *  Implement the methods of the class ShowVisitor
+ *  \author Dylan
+ *  \date 09/11/2021
+*/
 #include <iostream>
 #include "showvisitor.h"
 #include "mp3.h"

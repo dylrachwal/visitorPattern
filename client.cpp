@@ -1,3 +1,8 @@
+/*! \file client.cpp
+ *  Implement the methods of the class Client
+ *  \author Dylan
+ *  \date 09/11/2021
+*/
 #include <iostream>
 #include "client.h"
 #include "multimediaelement.h"

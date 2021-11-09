@@ -1,3 +1,8 @@
+/*! \file jpg.cpp
+ *  Implement the methods of the class JPG
+ *  \author Dylan
+ *  \date 09/11/2021
+*/
 #include <iostream>
 #include "jpg.h"
 #include "visitor.h"

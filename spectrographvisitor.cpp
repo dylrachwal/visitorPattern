@@ -1,3 +1,8 @@
+/*! \file spectrographvisitor.cpp
+ *  Implement the methods of the class SpectrographVisitor
+ *  \author Dylan
+ *  \date 09/11/2021
+*/
 #include <iostream>
 #include "spectrographvisitor.h"
 #include "mp3.h"
