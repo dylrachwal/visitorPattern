@@ -3,11 +3,6 @@
 
 #include "visitor.h"
 
-class MP3;
-class MP4;
-class JPG;
-
-
 class SpectrographVisitor : public Visitor
 {
 public:

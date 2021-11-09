@@ -6,10 +6,6 @@
 #include "mp3.h"
 #include "mp4.h"
 
-class JPG;
-class MP3;
-class MP4;
-
 
 class Visitor
 {

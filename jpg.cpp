@@ -22,10 +22,3 @@ int JPG::getLength() const
 {
     return length;
 }
-int JPG::getCoordinates() const
-{
-    int coordinates[2];
-    coordinates[0]=width;
-    coordinates[1]=length;
-    return *coordinates;
-}

@@ -4,7 +4,6 @@
 #include "multimediaelement.h"
 #include <iostream>
 
-class Visitor;
 
 class JPG : public MultimediaElement {
 private :
@@ -12,11 +11,9 @@ private :
     int length;
 public :
 	JPG(std::string name, int width, int length);
-    void accept(Visitor *v) const;
+    void accept(Visitor *v) const override;
     int getLength() const;
     int getWidth() const;
-    int getCoordinates() const;
-
 };
 
 #endif

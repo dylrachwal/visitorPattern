@@ -32,7 +32,7 @@ void ShowVisitor::visitJPG(const JPG *jpg)
 {
     std::cout << "showing JPG" << std::endl;
     std::cout << "the file is named " << jpg->getName() <<std::endl;
-    std::cout << "the coordinates are " << jpg->getCoordinates() << std::endl;
+    std::cout << "the coordinates are " << jpg->getLength() << "," << jpg->getWidth() << std::endl;
     std::cout << "closing JPG" << std::endl;
     nbElementDisplayed++;
 }

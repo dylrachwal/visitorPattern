@@ -4,14 +4,13 @@
 #include "multimediaelement.h"
 #include <iostream>
 
-class Visitor;
 
 class MP3 : public MultimediaElement {
 private :
     double duration;
 public :
 	MP3(std::string name, double duration);
-    void accept(Visitor *v) const;
+    void accept(Visitor *v) const override;
     double getDuration() const;
 };
 
