@@ -20,7 +20,7 @@ class MultimediaElement
 protected :
     std::string name; //!< Name of the MultimediaElement
 public:
-    virtual void accept(Visitor *v) const {}; //!< Abstract Method to allow any visitor and for the child to implements this method
+    virtual void accept(Visitor *v) const=0; //!< Abstract Method to allow any visitor and for the child to implements this method
     std::string getName() const; //!< Method to get the name of the MultimediaElement
 };
 

@@ -18,9 +18,9 @@
 class Visitor
 {
 public:
-    virtual void visitMP3(const MP3 *mp3){}; //!< Virtual Method to visit MP3
-    virtual void visitMP4(const MP4 *mp4){}; //!< Virtual Method to visit MP4
-    virtual void visitJPG(const JPG *jpg){}; //!< Virtual Method to visit JPG
+    virtual void visitMP3(const MP3 *mp3)=0; //!< Virtual Method to visit MP3
+    virtual void visitMP4(const MP4 *mp4)=0; //!< Virtual Method to visit MP4
+    virtual void visitJPG(const JPG *jpg)=0; //!< Virtual Method to visit JPG
 };
 
 #endif
